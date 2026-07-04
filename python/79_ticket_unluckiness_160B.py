@@ -1,0 +1,7 @@
+n = int(input().strip())
+s = input().strip()
+a = sorted(s[:n])
+b = sorted(s[n:])
+less = all(a[i] < b[i] for i in range(n))
+greater = all(a[i] > b[i] for i in range(n))
+print("YES" if less or greater else "NO")
