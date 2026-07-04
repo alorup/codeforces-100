@@ -1,0 +1,5 @@
+n, m = map(int, input().split())
+a = list(map(int, input().split()))
+a.sort()
+ans = sum(-x for x in a[:m] if x < 0)
+print(ans)
